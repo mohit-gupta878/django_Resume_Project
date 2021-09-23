@@ -1,0 +1,27 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block content %}
+<div class="mt-5 ">
+    <div class="text-center">
+        <img src="{% static 'core/images/mohitgupta.JPG' %}" alt="Profile pic"
+             class="img-thumbnail" width="250px" height="150px">
+    </div>
+    <div class=" mt-5 text-white mx-5 text-justify">
+    <h1 class="font-weight-bold st-font">Hello,</h1>
+        <div class="px-4" style="line-height:2rem;">
+            <p style="text-indent:100px;">I, <b class="text-warning">MOHIT GUPTA</b>
+                currently pursuing B.Tech from Meerut Institute of Engineering and Technology, Meerut in Computer Science and Engineering(CSE) branch.
+                I did my schooling from CBSE Board and belong to a nuclear family. My short term goal is to get a job in a reputed company and my long term
+                goal is to achieve a good position where i can build my carrer.
+                My interest is to solve scientific problem and gain knowledge so that i have the latest updates of our surroundings.
+                I am i keen observer and I want to become a Software Engineer.
+
+            </p>
+        </div>
+    </div>
+    <div class="text-center">
+    <a href="{% url 'contact' %}" class="btn btn-outline-warning my-3 mr-5"> Hire Me</a>
+    <a href="{% url 'contact' %}" class="btn btn-outline-info my-3"> Contact</a>
+    </div>
+</div>
+{% endblock content %}
